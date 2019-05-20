@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ShowMeCancer - Home</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="Anthony Cardillo MD">
+</head>
+
+<body>
+	<h1>ShowMeCancer - Head/Neck Cancer</h1>
+	<h2>Results</h2>
+	
+	{% for image in images%}
+		<img src="{{ url_for('static', filename=image) }}" alt="Cancer Image">
+	{% endfor %}
+ 
+</body>
+
+</html>
